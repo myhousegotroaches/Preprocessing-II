@@ -127,6 +127,7 @@ table {
   border-spacing: 0;
 }
 * {
+  max-width: 100%;
   box-sizing: border-box;
 }
 html {
@@ -134,14 +135,14 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
 }
 h1 {
   font-size: 4rem;
@@ -179,6 +180,8 @@ img {
     display: flex;
     flex-flow: column wrap;
     padding: 2% 0;
+    margin-left: 6%;
+    width: 100%;
   }
 }
 @media (max-width: 500px) and (max-width: 500px) {
@@ -237,13 +240,31 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 90%;
+    margin-left: 5%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -251,6 +272,12 @@ img {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #c0c0c0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
