@@ -1,1 +1,15 @@
 // Mixins in here
+
+.button(@hoverback) {
+  font-size: 2rem;
+  text-align: center;
+  padding: 5% 2%;
+  width: 70%;
+  border-radius: 10px;
+  background: @button-bg;
+  color: @main-bg;
+
+  &:hover {
+    background: @hoverback;
+  }
+}

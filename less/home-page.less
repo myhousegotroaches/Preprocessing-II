@@ -1,21 +1,46 @@
 .home {
+  .header-section {
+    @media @mobile {
+      width: 90%;
 
+      img {
+        margin-left: 6%;
+      }
+    }
+  }
+  .headerWelcomeText {
+    border-bottom: 2px dashed #a1d4b1; // my header text ----
+    padding: 2% 0;
+    @media @mobile {
+      margin-left: 6%;
+    }
+  }
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+    }
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 90%;
+        margin-left: 5%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        width: 90%;
+        margin-left: 5%;
+      }
 
       img {
         border-radius: 10px;
@@ -26,6 +51,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      display: flex;
+      flex-flow: column-reverse nowrap;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -53,9 +82,29 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      display: flex;
+      flex-flow: column wrap;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 90%;
+        margin-left: 5%;
+      }
+
+      .btn {
+        .button(blue);
+
+        @media @mobile {
+          border: 1px solid black;
+          padding: 3% 5%;
+          width: 90%;
+        }
+      } // my button ------
     }
   }
-}// home
+} // home
