@@ -1,8 +1,15 @@
 // Mixins in here
 
-.button-design(@fontSize, @radius, @width, @border:none;) {
-  font-size: @fontSize;
-  border-radius: @radius;
-  width: @width;
-  border: @border;
+.button(@hoverback) {
+  font-size: 2rem;
+  text-align: center;
+  padding: 5% 2%;
+  width: 70%;
+  border-radius: 10px;
+  background: @button-bg;
+  color: @main-bg;
+
+  &:hover {
+    background: @hoverback;
+  }
 }

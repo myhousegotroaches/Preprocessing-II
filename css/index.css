@@ -172,13 +172,31 @@ img {
   display: flex;
   justify-content: space-between;
   padding: 5% 0;
-  border-bottom: 2px dashed #a1d4b1;
+  border-bottom: 2px dashed #c0c0c0;
+}
+@media (max-width: 500px) {
+  .navagation {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 2% 0;
+  }
+}
+@media (max-width: 500px) and (max-width: 500px) {
+  .navagation h1 {
+    text-align: center;
+    padding-bottom: 2%;
+  }
 }
 .navagation nav {
   width: 50%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .navagation nav {
+    width: 100%;
+  }
 }
 .navagation nav a {
   text-decoration: none;
@@ -188,13 +206,17 @@ img {
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
-  background: #FFEBCD;
+  background: #ffebcd;
 }
 .footer p {
   text-align: center;
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .headerWelcomeText {
+  border-bottom: 2px dashed #a1d4b1;
+  padding: 2% 0;
 }
 .home .content-section {
   margin: 30px 0;
@@ -215,7 +237,7 @@ img {
 }
 .home .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #c0c0c0;
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -234,7 +256,7 @@ img {
 }
 .home .content-pick {
   padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
+  border-top: 2px dashed #c0c0c0;
   display: flex;
   justify-content: space-between;
 }
@@ -242,7 +264,15 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
-.headerWelcomeText {
-  border-bottom: 2px dashed #a1d4b1;
-  padding: 2% 0;
+.home .content-pick .destination .btn {
+  font-size: 2rem;
+  text-align: center;
+  padding: 5% 2%;
+  width: 70%;
+  border-radius: 10px;
+  background: #17a2b8;
+  color: #ffffff;
+}
+.home .content-pick .destination .btn:hover {
+  background: blue;
 }
